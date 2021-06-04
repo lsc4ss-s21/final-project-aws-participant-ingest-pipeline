@@ -5,6 +5,9 @@
 import csv
 import argparse
 from os import path
+import boto3
+
+s3 = boto3.client('s3') # initialize s3 client for data storage
 
 # fields to collect
 FIELDS = ['First Name','Last Name','Date of Birth','Height','Weight','Gender Identity','Handedness','Email Address','Cell Phone Number','Preferred Language']
@@ -96,10 +99,17 @@ def participantIngest():
         print("number of participants to manually add: ",end='')
         num_participants = input()
         dataEnteredByResearcher(int(num_participants))
+        s3.upload_file(Bucket='lcssfinal',
+                        Filename='ingest_output.csv',
+                        Key='ingest_output.csv')
+
     else:
         print("name of csv file to load in: ",end='')
         filename = input()
         dataFromParticipant(filename)
+        s3.upload_file(Bucket='lcssfinal',
+                        Filename='ingest_output.csv',
+                        Key='ingest_output.csv')
 
 if __name__ == "__main__":
     participantIngest()
