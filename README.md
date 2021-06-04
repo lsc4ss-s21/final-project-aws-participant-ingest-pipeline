@@ -7,10 +7,10 @@
 
 |Section|
 |---|
-|Problem Description|
-|Pipeline Overview|
-|Addressing the Problem|
-|Benefits of AWS for Psychology Research|
+|[Problem Description](#problem-description)|
+|[Pipeline Overview](#pipeline-overview)|
+|[Addressing the Problem](#addressing-the-problem)|
+|[Benefits of AWS for Psychology Research](#benefits-of-aws-for-psychology-research)|
 
 
 
