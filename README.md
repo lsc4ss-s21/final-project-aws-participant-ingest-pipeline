@@ -19,7 +19,7 @@
 
 #### Ingest - [Script](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/participant_ingest.py)
 
-#### Notify - [Notebook](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/Participant_Contact_%26_Translate.ipynb)
+#### Notify - [Notebook](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/Participant_Contact.ipynb)
 
 #### Visualize - [Interactive Notebook](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/Data_Visualizer.ipynb)
 
