@@ -43,7 +43,7 @@ The final stage of the pipeline is `Participant_IRB.ipynb`, which is another int
 
 Below is the email I got requesting the letter in English:
 
-[Image](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/email.PNG)
+![Image](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/email.PNG)
 
 ### Addressing the Problem
 
