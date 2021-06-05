@@ -33,9 +33,9 @@ Engages the manual upload mode, which will prompt the user to enter the number o
 
 If the user instead does not supply the `-m` flag, the system will enter automatic upload mode, which takes a premade CSV file and either creates the ingest_output.csv file or amends new data to it before pushing the data to S3. 
 
-#### Acceptance/Rejection Filtering - [Interactive Notebook]()
+#### Acceptance/Rejection Filtering - [Interactive Notebook](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/Data_Filtering.ipynb)
 
-The notebook `Data_filtering.ipynb` serves as the second stage of the pipeline. This interactive notebook begins by engaging a boto3 client for both S3 (data) and SNS (communication). After reading in the output from the ingest python script, the notebook utilizes the `Ipywidget` package, an interactive graphical element library to allow for selective filtering of the dataset based on constraints. By identifying certain rows that meet those constraints, one can filter which participants will enter the study and which will not. The added benefit of SNS allows the researcher to then extract the email or phone number from the participants to either inform them of their acceptance or rejection into the study. 
+The notebook `Data_filtering.ipynb` serves as the second stage of the pipeline. This interactive notebook begins by engaging a boto3 client for S3 data handling. After reading in the output from the ingest python script, the notebook utilizes the `Ipywidget` package, an interactive graphical element library to allow for selective filtering of the dataset based on constraints. By identifying certain rows that meet those constraints, one can filter which participants will enter the study and which will not.
 
 #### IRB Informed Consent Distribution - [Notebook](https://github.com/lsc4ss-s21/final-project-aws-participant-ingest-pipeline/blob/master/Participant_IRB.ipynb)
 
